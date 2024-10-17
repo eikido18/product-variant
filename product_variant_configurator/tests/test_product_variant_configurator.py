@@ -513,11 +513,7 @@ class TestProductVariantConfigurator(TransactionCase):
             }
         )
         result = product._get_product_attributes_values_text()
-        expected_result = "{}\n{}: {}".format(
-            self.product_template_yes.name,
-            self.attribute1.name,
-            self.value1.name,
-        )
+        expected_result = f"{self.product_template_yes.name}\n{self.attribute1.name}: {self.value1.name}"
         self.assertEqual(result, expected_result)
         product = self.product_product.create(
             {
