@@ -295,7 +295,7 @@ class TestProductVariantConfigurator(TransactionCase):
             [("product_tmpl_id", "=", self.product_template_empty_yes.id)],
         )
 
-    def test_templ_name_search(self):
+    def test_templ_search_display_name(self):
         res = self.product_template.name_search("Product template 222")
         for r in res:
             if r[0] == self.product_template_no.id:

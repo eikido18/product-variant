@@ -210,7 +210,7 @@ class ProductConfigurator(models.AbstractModel):
     @api.model
     def _get_product_description(self, template, product, product_attributes):
         name = product and product.name or template.name
-        extended = self.user_has_groups(
+        extended = self.env.user_has_groups(
             "product_variant_configurator.group_product_variant_extended_description"
         )
         if not product_attributes and product:
