@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record id="product_template_form_view" model="ir.ui.view">
         <field name="name">product.template.form.inherited</field>
@@ -29,7 +29,7 @@
     </record>
     <!-- Hide price extra fields, as they are no longer useful -->
     <record id="product_template_attribute_value_view_tree" model="ir.ui.view">
-        <field name="name">product.template.attribute.value.tree.hide.extra</field>
+        <field name="name">product.template.attribute.value.list.hide.extra</field>
         <field name="model">product.template.attribute.value</field>
         <field
             name="inherit_id"
